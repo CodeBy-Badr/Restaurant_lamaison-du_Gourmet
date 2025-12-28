@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservations - La Maison du Gourmet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>🍽️ La Maison du Gourmet</h1>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html" class="active">Réservations</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero-small">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Réservations</h1>
+            <p>Réservez votre table pour une expérience inoubliable</p>
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-form-container" data-aos="fade-right">
+                    <h2>Réserver une Table</h2>
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Nom Complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Heure</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Nombre de Personnes</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Sélectionner...</option>
+                                    <option value="1">1 personne</option>
+                                    <option value="2">2 personnes</option>
+                                    <option value="3">3 personnes</option>
+                                    <option value="4">4 personnes</option>
+                                    <option value="5">5 personnes</option>
+                                    <option value="6">6 personnes</option>
+                                    <option value="7">7 personnes</option>
+                                    <option value="8">8+ personnes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="occasion">Occasion</label>
+                                <select id="occasion" name="occasion">
+                                    <option value="">Sélectionner...</option>
+                                    <option value="anniversaire">Anniversaire</option>
+                                    <option value="fiancailles">Fiançailles</option>
+                                    <option value="mariage">Mariage</option>
+                                    <option value="affaires">Affaires</option>
+                                    <option value="famille">Famille</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferences">Préférences Spéciales</label>
+                            <textarea id="preferences" name="preferences" rows="4" placeholder="Allergies, régimes spéciaux, demandes particulières..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Réserver Maintenant</button>
+                    </form>
+                </div>
+                <div class="booking-info" data-aos="fade-left">
+                    <h2>Informations Utiles</h2>
+                    <div class="info-box">
+                        <h3>🕐 Horaires d'Ouverture</h3>
+                        <p>Lundi - Jeudi: 12h - 23h</p>
+                        <p>Vendredi - Samedi: 12h - 00h</p>
+                        <p>Dimanche: 12h - 22h</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>📍 Adresse</h3>
+                        <p>42 Rue de la Paix</p>
+                        <p>75008 Paris</p>
+                        <p>France</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>📞 Contact</h3>
+                        <p>+33 (0)1 23 45 67 89</p>
+                        <p>contact@maisondugroumet.fr</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>🚗 Parking</h3>
+                        <p>Parking gratuit pour nos clients</p>
+                        <p>Voiturier disponible le soir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONDITIONS SECTION -->
+    <section class="conditions">
+        <div class="container">
+            <div class="section-title" data-aos="fade-down">
+                <h2>Conditions de Réservation</h2>
+            </div>
+            <div class="conditions-grid">
+                <div class="condition-card" data-aos="fade-up">
+                    <h3>Confirmation</h3>
+                    <p>Vous recevrez une confirmation par email et par SMS dans les 24 heures suivant votre réservation.</p>
+                </div>
+                <div class="condition-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Annulation</h3>
+                    <p>Les annulations doivent être faites au minimum 48 heures avant votre réservation.</p>
+                </div>
+                <div class="condition-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Paiement</h3>
+                    <p>Aucun acompte requis pour les réservations. Paiement le jour du repas.</p>
+                </div>
+                <div class="condition-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Tarifs Groupe</h3>
+                    <p>Pour les groupes de 10+ personnes, nous offrons des menus spéciaux sur demande.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>La Maison du Gourmet</h3>
+                    <p>Le meilleur de la gastronomie française depuis 1998</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <p>Lundi - Jeudi: 12h - 23h</p>
+                    <p>Vendredi - Samedi: 12h - 00h</p>
+                    <p>Dimanche: 12h - 22h</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📍 42 Rue de la Paix, 75008 Paris</p>
+                    <p>📞 +33 (0)1 23 45 67 89</p>
+                    <p>📧 contact@maisondugroumet.fr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Maison du Gourmet. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

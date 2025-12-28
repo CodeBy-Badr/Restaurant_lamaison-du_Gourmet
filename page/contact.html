@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - La Maison du Gourmet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>🍽️ La Maison du Gourmet</h1>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Réservations</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero-small">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Nous Contacter</h1>
+            <p>Nous sommes à l'écoute de vos questions et demandes</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- FORM -->
+                <div class="contact-form-container" data-aos="fade-right">
+                    <h2>Envoyez-nous un Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="cname">Nom Complet</label>
+                            <input type="text" id="cname" name="cname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cemail">Email</label>
+                            <input type="email" id="cemail" name="cemail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cphone">Téléphone</label>
+                            <input type="tel" id="cphone" name="cphone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionner un sujet...</option>
+                                <option value="reservation">Question sur les réservations</option>
+                                <option value="menu">Question sur le menu</option>
+                                <option value="event">Événements privés</option>
+                                <option value="catering">Service de traiteur</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le Message</button>
+                    </form>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="contact-info" data-aos="fade-left">
+                    <h2>Nos Coordonnées</h2>
+                    
+                    <div class="contact-item">
+                        <h3>📍 Adresse</h3>
+                        <p>42 Rue de la Paix</p>
+                        <p>75008 Paris</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📞 Téléphone</h3>
+                        <p><a href="tel:+33123456789">+33 (0)1 23 45 67 89</a></p>
+                        <p>Lundi - Dimanche: 12h - 23h</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:contact@maisondugroumet.fr">contact@maisondugroumet.fr</a></p>
+                        <p>Réponse dans les 24h</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>🎉 Événements Privés</h3>
+                        <p><a href="mailto:events@maisondugroumet.fr">events@maisondugroumet.fr</a></p>
+                        <p>Mariages, Entreprise, Célébrations</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>🥘 Service Traiteur</h3>
+                        <p><a href="mailto:catering@maisondugroumet.fr">catering@maisondugroumet.fr</a></p>
+                        <p>Devis personnalisés sur demande</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <div class="container">
+            <h2 data-aos="fade-down">Trouvez-nous sur la Carte</h2>
+            <div class="map-container" data-aos="zoom-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.856490949326!2d2.3069!3d48.8728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f42e34c6c6f%3A0x5c8a3e7c3d6f3f6f!2s42%20Rue%20de%20la%20Paix%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1234567890" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-down">
+                <h2>Questions Fréquemment Posées</h2>
+                <p>Trouvez les réponses à vos questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-card" data-aos="fade-up">
+                    <h3>Puis-je réserver une table par téléphone?</h3>
+                    <p>Oui, vous pouvez appeler directement au +33 (0)1 23 45 67 89 ou utiliser notre formulaire de réservation en ligne.</p>
+                </div>
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Avez-vous des menus végétariens?</h3>
+                    <p>Absolument! Nous proposons des options végétariennes et vegan sur demande. Consultez notre menu ou contactez-nous.</p>
+                </div>
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Proposez-vous des services de traiteur?</h3>
+                    <p>Oui, nous organisons des événements privés et des services de traiteur. Contactez events@maisondugroumet.fr pour plus d'informations.</p>
+                </div>
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Acceptez-vous les cartes bancaires?</h3>
+                    <p>Oui, nous acceptons toutes les cartes bancaires principales ainsi que les espèces et les chèques.</p>
+                </div>
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Y a-t-il du parking nearby?</h3>
+                    <p>Oui, nous offrons un parking gratuit à nos clients. Un voiturier est disponible en soirée.</p>
+                </div>
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Puis-je voir les avis des clients?</h3>
+                    <p>Consultez notre page d'accueil pour lire les avis de nos clients satisfaits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>La Maison du Gourmet</h3>
+                    <p>Le meilleur de la gastronomie française depuis 1998</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <p>Lundi - Jeudi: 12h - 23h</p>
+                    <p>Vendredi - Samedi: 12h - 00h</p>
+                    <p>Dimanche: 12h - 22h</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📍 42 Rue de la Paix, 75008 Paris</p>
+                    <p>📞 +33 (0)1 23 45 67 89</p>
+                    <p>📧 contact@maisondugroumet.fr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Maison du Gourmet. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
